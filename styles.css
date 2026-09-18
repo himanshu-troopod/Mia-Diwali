@@ -305,3 +305,6 @@ footer{background:var(--mia-white);border-color:var(--border)}
   .hero__image{object-position:62% center}
   .hero__shade{background:linear-gradient(0deg,rgba(55,0,31,.58),rgba(55,0,31,.04) 58%,transparent 78%)}
 }
+@media(min-width:821px){
+  .hero-title-lockup{left:clamp(24px,5vw,72px);transform:none}
+}
