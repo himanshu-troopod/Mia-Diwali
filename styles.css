@@ -224,3 +224,37 @@ footer{background:var(--mia-white);border-color:var(--border)}
   .product-card>small{font-size:11px}
   .modal-card h2{font-size:30px}
 }
+
+/* ===== Closing CTA (ported from GIVA Diwali build) ===== */
+.closing-cta{position:relative;overflow:hidden;background:radial-gradient(circle at 60% 25%,#b72165 0,#7f055c 38%,#4b042f 100%);color:#fff;min-height:420px;display:flex;align-items:center}
+#closingCanvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:8}
+.closing-inner{position:relative;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:40px}
+.closing-inner>div>span{display:block;margin:0 0 14px;color:#f8d68f;font-size:11px;font-weight:900;letter-spacing:.28em}
+.closing-inner h2{font-size:clamp(44px,5vw,70px);max-width:720px;line-height:1.05;letter-spacing:-.035em;font-weight:500;margin:0}
+.closing-inner p{max-width:650px;color:#f4dbe9;font-size:15px;line-height:1.65}
+.closing-lights{position:absolute;inset:0;background:linear-gradient(12deg,transparent 35%,rgba(255,216,116,.13) 36%,transparent 37%),radial-gradient(circle,#ffd978 0 1.4px,transparent 2.5px) 0 0/38px 38px;opacity:.6;animation:sparkMove 22s linear infinite}
+.closing-diyas{position:absolute;right:4vw;bottom:24px;z-index:3;display:flex;gap:16px;align-items:end}
+.diya{position:relative;display:block;width:70px;height:29px;border-radius:10% 10% 54% 54% / 10% 10% 80% 80%;background:linear-gradient(180deg,#cb5c1e,#8a2e11);border-bottom:4px solid #6e210b;box-shadow:inset 0 4px 0 #ed8d3f}
+.diya::after{content:"";position:absolute;left:15%;right:15%;top:5px;height:3px;border-radius:50%;background:rgba(255,221,125,.72)}
+.diya b{position:absolute;left:50%;bottom:21px;width:16px;height:31px;transform:translateX(-50%) rotate(2deg);border-radius:56% 44% 56% 44%;background:radial-gradient(ellipse at 50% 72%,#fff7b0 0 24%,#ffd154 25% 47%,#ff8b1d 49% 70%,transparent 72%);filter:drop-shadow(0 0 6px #ffbd38) drop-shadow(0 0 16px rgba(255,132,15,.75));animation:flicker .55s ease-in-out infinite alternate}
+.diya.small{width:48px;height:21px}
+.diya.small b{width:11px;height:23px;bottom:15px}
+.diya.large{width:90px;height:36px}
+.diya.large b{width:20px;height:39px;bottom:28px}
+.button.ivory{background:var(--cream);color:var(--pink-deep)}
+@keyframes flicker{0%{transform:translateX(-50%) scale(.96) rotate(-2deg)}100%{transform:translateX(-50%) scale(1.06) rotate(3deg)}}
+@keyframes sparkMove{to{background-position:280px 0,0 0}}
+@media(max-width:1024px){
+  .closing-inner{align-items:flex-start;flex-direction:column;justify-content:center}
+  .closing-cta{min-height:520px}
+  .closing-diyas{right:16px;bottom:20px}
+}
+@media(max-width:640px){
+  .closing-inner h2{font-size:44px}
+  .closing-inner p{font-size:12px;max-width:78%}
+  .closing-diyas{opacity:.8}
+  .diya{width:57px;height:24px}
+}
+@media(prefers-reduced-motion:reduce){
+  .closing-lights,.diya b{animation:none}
+}
