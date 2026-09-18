@@ -130,7 +130,7 @@
     const x = Math.random() * w * .85 + w * .075;
     const y = Math.random() * h * .42 + h * .06;
     const count = Math.round(18 * intensity);
-    const hue = Math.random() > .45 ? '#ffd36a' : '#e9718b';
+    const hue = Math.random() > .45 ? '#f7d382' : '#dd4576';
     for (let i = 0; i < count; i++) {
       const a = (Math.PI * 2 * i / count) + Math.random() * .16;
       const s = 1 + Math.random() * 2.2;
