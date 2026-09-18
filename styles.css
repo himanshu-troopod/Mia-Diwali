@@ -321,3 +321,14 @@ footer{background:var(--mia-white);border-color:var(--border)}
 .cracker i:nth-child(5){transform:rotate(240deg) translateY(-10px)}
 .cracker i:nth-child(6){transform:rotate(300deg) translateY(-10px)}
 .reward-message{min-height:28px;margin-top:16px;color:var(--pink-deep);font-weight:900;font-size:13px}
+
+/* ===== Gold & Diamonds edit: desktop grid instead of a swipe rail ===== */
+@media(min-width:1025px){
+  .gold-rail{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;overflow:visible;margin-inline:0;padding-inline:0;padding-bottom:0}
+  .gold-rail>a{flex:none;width:auto;transition:transform .25s,box-shadow .25s}
+  .gold-rail>a:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+  .gold-rail>a:hover img{transform:scale(1.04)}
+  .gold-rail>a>span{height:260px}
+  .gold-rail-wrap{margin-top:40px}
+  .gold-rail-wrap>header small{display:none}
+}
