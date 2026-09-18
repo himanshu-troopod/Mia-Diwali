@@ -213,9 +213,17 @@
     <div class="shell footer-bottom"><span>Concept page for Mia by Tanishq</span><span>Campaign copy marked as placeholder in source.</span></div>
   </footer>
 
-  <div class="discovery-modal" role="dialog" aria-modal="true" aria-labelledby="discoveryTitle" aria-hidden="true">
-    <button class="modal-backdrop" type="button" aria-label="Close discovery"></button>
-    <div class="modal-card"><button class="modal-close" type="button" aria-label="Close">×</button><small>FESTIVE FUN</small><h2 id="discoveryTitle">Burst the Crackers</h2><p id="discoveryText">A little Diwali moment, made brighter by Mia.</p><a class="button button--pink" id="discoveryLink" href="#diwali-shop">Continue to the festive edit</a></div>
+  <div class="discovery-modal" id="gameModal" role="dialog" aria-modal="true" aria-labelledby="gameTitle" aria-hidden="true">
+    <button class="modal-backdrop" type="button" data-close-game aria-label="Close game"></button>
+    <div class="modal-card">
+      <button class="modal-close" type="button" data-close-game aria-label="Close">&times;</button>
+      <div class="modal-visual"><div class="cracker" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <small>FESTIVE FUN</small>
+      <h2 id="gameTitle">Burst the Crackers</h2>
+      <p id="gameText">Tap the button and enjoy a small web-native firework moment.</p>
+      <button class="button button--pink" type="button" id="gameAction">Burst now</button>
+      <div class="reward-message" id="rewardMessage"></div>
+    </div>
   </div>
 
   <script src="script.js"></script>

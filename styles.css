@@ -308,3 +308,16 @@ footer{background:var(--mia-white);border-color:var(--border)}
 @media(min-width:821px){
   .hero-title-lockup{left:clamp(24px,5vw,72px);transform:none}
 }
+
+/* ===== Festive Fun game modal (ported from GIVA Diwali build, Mia palette) ===== */
+.modal-card{overflow:hidden}
+.modal-visual{height:120px;display:grid;place-items:center}
+.cracker{position:relative;width:90px;height:90px}
+.cracker i{position:absolute;left:50%;top:50%;width:5px;height:42px;border-radius:5px;background:linear-gradient(#f7d382,#dd4576);transform-origin:50% 0;opacity:.85}
+.cracker i:nth-child(1){transform:rotate(0deg) translateY(-10px)}
+.cracker i:nth-child(2){transform:rotate(60deg) translateY(-10px)}
+.cracker i:nth-child(3){transform:rotate(120deg) translateY(-10px)}
+.cracker i:nth-child(4){transform:rotate(180deg) translateY(-10px)}
+.cracker i:nth-child(5){transform:rotate(240deg) translateY(-10px)}
+.cracker i:nth-child(6){transform:rotate(300deg) translateY(-10px)}
+.reward-message{min-height:28px;margin-top:16px;color:var(--pink-deep);font-weight:900;font-size:13px}

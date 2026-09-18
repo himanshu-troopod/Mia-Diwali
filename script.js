@@ -51,48 +51,63 @@
     button.setAttribute('aria-label', `${active ? 'Add' : 'Remove'} ${button.getAttribute('aria-label').replace(/^(Add|Remove) /, '')}`);
   }));
 
-  const modal = document.querySelector('.discovery-modal');
-  const modalTitle = document.querySelector('#discoveryTitle');
-  const modalText = document.querySelector('#discoveryText');
-  const modalLink = document.querySelector('#discoveryLink');
-  const modalClose = modal?.querySelector('.modal-close');
+  // Play & Win modal: ported from the GIVA Diwali build.
+  const modal = document.getElementById('gameModal');
+  const gameTitle = document.getElementById('gameTitle');
+  const gameText = document.getElementById('gameText');
+  const gameAction = document.getElementById('gameAction');
+  const reward = document.getElementById('rewardMessage');
+  let game = 'crackers';
   let lastTrigger = null;
-  const content = {
-    crackers: {
-      title: 'Burst the Crackers',
-      text: 'A little Diwali moment, made brighter by Mia. Discover jewellery that brings the sparkle.',
-      url: '#diwali-shop'
-    },
-    mithai: {
-      title: 'Catch the Mithai',
-      text: 'Sweeten the celebration with a Mia gifting edit for everyone who lights up your life.',
-      url: '#gifting'
-    }
+  const openGame = (type, trigger) => {
+    game = type;
+    lastTrigger = trigger || null;
+    gameTitle.textContent = type === 'crackers' ? 'Burst the Crackers' : 'Catch the Mithai';
+    gameText.textContent = type === 'crackers'
+      ? 'Tap the button and enjoy a small web-native firework moment.'
+      : 'Tap the button for a festive demo reward moment.';
+    gameAction.textContent = type === 'crackers' ? 'Burst now' : 'Catch now';
+    reward.textContent = '';
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    body.classList.add('no-scroll');
+    modal.querySelector('.modal-close')?.focus();
   };
-  const closeModal = () => {
+  const closeGame = () => {
     modal?.classList.remove('open');
     modal?.setAttribute('aria-hidden', 'true');
     body.classList.remove('no-scroll');
     lastTrigger?.focus();
   };
-  document.querySelectorAll('[data-discovery]').forEach(button => button.addEventListener('click', () => {
-    lastTrigger = button;
-    const item = content[button.dataset.discovery];
-    modalTitle.textContent = item.title;
-    modalText.textContent = item.text;
-    modalLink.href = item.url;
-    modal.classList.add('open');
-    modal.setAttribute('aria-hidden', 'false');
-    body.classList.add('no-scroll');
-    modalClose.focus();
-  }));
-  modalClose?.addEventListener('click', closeModal);
-  modal?.querySelector('.modal-backdrop')?.addEventListener('click', closeModal);
+  document.querySelectorAll('[data-discovery]').forEach(btn =>
+    btn.addEventListener('click', () => openGame(btn.dataset.discovery, btn)));
+  document.querySelectorAll('[data-close-game]').forEach(btn =>
+    btn.addEventListener('click', closeGame));
+  gameAction?.addEventListener('click', () => {
+    reward.textContent = game === 'crackers' ? 'Festive sparkle unlocked!' : 'Festive treat unlocked!';
+    burstParticles(modal.querySelector('.modal-card'), 42);
+  });
+
+  function burstParticles(container, count) {
+    if (reduced || !container) return;
+    for (let i = 0; i < count; i++) {
+      const p = document.createElement('i');
+      const angle = Math.random() * Math.PI * 2;
+      const dist = 70 + Math.random() * 120;
+      p.style.cssText = `position:absolute;left:50%;top:38%;width:${2 + Math.random() * 4}px;height:${2 + Math.random() * 4}px;border-radius:50%;background:${Math.random() > .45 ? '#f7d382' : '#dd4576'};pointer-events:none;z-index:8;transition:transform .8s ease-out,opacity .8s ease-out;`;
+      container.appendChild(p);
+      requestAnimationFrame(() => {
+        p.style.transform = `translate(${Math.cos(angle) * dist}px,${Math.sin(angle) * dist}px)`;
+        p.style.opacity = '0';
+      });
+      setTimeout(() => p.remove(), 850);
+    }
+  }
 
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape') {
       closeSearch();
-      if (modal?.classList.contains('open')) closeModal();
+      if (modal?.classList.contains('open')) closeGame();
     }
     if (event.key === 'Tab' && modal?.classList.contains('open')) {
       const focusable = [...modal.querySelectorAll('button, a[href]')];
