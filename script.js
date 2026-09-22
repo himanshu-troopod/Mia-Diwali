@@ -125,6 +125,43 @@
   });
 })();
 
+// ===== Cursor sparkle trail =====
+(() => {
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!finePointer.matches || reducedMotion.matches) return;
+
+  const colors = ['#ffd86e', '#ff9ebd', '#ffffff', '#f8bd59'];
+  let lastX = 0;
+  let lastY = 0;
+  let lastTime = 0;
+
+  const createSparkle = (x, y) => {
+    const sparkle = document.createElement('i');
+    sparkle.className = 'cursor-sparkle';
+    sparkle.setAttribute('aria-hidden', 'true');
+    sparkle.style.left = `${x}px`;
+    sparkle.style.top = `${y}px`;
+    sparkle.style.setProperty('--sparkle-size', `${4 + Math.random() * 6}px`);
+    sparkle.style.setProperty('--sparkle-color', colors[Math.floor(Math.random() * colors.length)]);
+    sparkle.style.setProperty('--sparkle-x', `${(Math.random() - .5) * 28}px`);
+    sparkle.style.setProperty('--sparkle-y', `${-10 - Math.random() * 24}px`);
+    document.body.appendChild(sparkle);
+    sparkle.addEventListener('animationend', () => sparkle.remove(), { once: true });
+  };
+
+  window.addEventListener('pointermove', event => {
+    const now = performance.now();
+    const distance = Math.hypot(event.clientX - lastX, event.clientY - lastY);
+    if (distance < 10 && now - lastTime < 45) return;
+    lastX = event.clientX;
+    lastY = event.clientY;
+    lastTime = now;
+    createSparkle(event.clientX, event.clientY);
+    if (Math.random() > .55) createSparkle(event.clientX + (Math.random() - .5) * 14, event.clientY + (Math.random() - .5) * 14);
+  }, { passive: true });
+})();
+
 // ===== Closing CTA firework canvas (ported from GIVA Diwali build) =====
 (() => {
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
