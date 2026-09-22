@@ -458,37 +458,47 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 @media(hover:none),(pointer:coarse){.cursor-sparkle{display:none}}
 @media(prefers-reduced-motion:reduce){.festive-stage__glint,.cursor-sparkle{display:none}}
 
-/* Ritual section: a quieter, narrower editorial composition. */
-#pooja.feature{padding:clamp(64px,7vw,96px) 0;background:radial-gradient(circle at 8% 16%,rgba(255,255,255,.92),transparent 25%),radial-gradient(circle at 90% 80%,rgba(221,69,118,.12),transparent 30%),linear-gradient(135deg,#fff9f4,#fbe8e8 54%,#f7dce5)}
-#pooja .feature__shell{width:min(1120px,calc(100% - var(--gutter)*2))}
-#pooja .feature__heading{max-width:650px;margin-bottom:30px}
-#pooja .feature__heading .eyebrow{display:block;color:var(--mia-pink)}
-#pooja .feature__heading h2{font-family:'Manrope',sans-serif;font-size:clamp(38px,4vw,58px);font-weight:500;letter-spacing:-.045em;line-height:1.03}
-#pooja .feature__heading>p:last-child{max-width:520px;margin:15px auto 0;color:#765f60;font-family:Georgia,serif;font-size:18px}
-#pooja .feature-board{grid-template-columns:minmax(0,1.75fr) minmax(270px,.65fr);gap:12px;padding:12px;border-color:rgba(129,29,75,.12);border-radius:24px;background:rgba(255,255,255,.72);box-shadow:0 22px 55px rgba(97,31,55,.12);backdrop-filter:blur(14px)}
-#pooja .feature-hero{min-height:570px;border-radius:16px}
-#pooja .feature-hero::after{background:linear-gradient(0deg,rgba(48,0,28,.7),transparent 58%)}
-#pooja .feature-hero>span{left:28px;bottom:28px}
-#pooja .feature-hero strong{max-width:460px;font-size:clamp(32px,3.3vw,46px)}
-#pooja .feature-products{grid-template-columns:1fr;grid-template-rows:repeat(2,1fr);gap:12px}
-#pooja .feature-products>a{min-height:0;border-radius:16px}
-#pooja .feature-products strong{font-size:18px}
+/* Pooja Essentials: a warm, diya-lit editorial board. */
+#pooja.feature{position:relative;isolation:isolate;padding:clamp(64px,6vw,86px) 0;overflow:hidden;background:linear-gradient(115deg,rgba(210,175,174,.92),rgba(195,123,151,.9)),url('assets/hero-pooja-diwali.jpg') center 58%/cover no-repeat}
+#pooja.feature::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 5% 8%,rgba(255,217,102,.42) 0 2px,transparent 3px),radial-gradient(circle at 91% 18%,rgba(255,218,149,.28) 0 2px,transparent 3px),linear-gradient(90deg,rgba(255,245,230,.12),transparent 35%,rgba(103,0,52,.08));background-size:74px 74px,96px 96px,auto;opacity:.78}
+#pooja.feature::after{content:"";position:absolute;inset:auto -5% -28% -5%;z-index:-1;height:64%;background:linear-gradient(0deg,rgba(87,0,43,.28),transparent),radial-gradient(ellipse at 50% 100%,rgba(255,224,168,.3),transparent 58%);filter:blur(2px)}
+#pooja .feature__glow{background:radial-gradient(circle at 10% 20%,rgba(255,236,187,.25),transparent 22%),radial-gradient(circle at 88% 70%,rgba(255,201,222,.2),transparent 32%)}
+#pooja .feature__shell{width:min(1220px,calc(100% - var(--gutter)*2))}
+#pooja .feature__heading{max-width:680px;margin-bottom:24px;text-align:center}
+#pooja .feature__heading .eyebrow{display:block;margin-bottom:10px;color:#111;font-size:10px}
+#pooja .feature__heading h2{font-family:'Manrope',sans-serif;font-size:clamp(34px,3.6vw,52px);font-weight:500;letter-spacing:-.045em;line-height:1.02;color:#111}
+#pooja .feature__heading>p:last-child{max-width:560px;margin:12px auto 0;color:#111;font-family:'Manrope',sans-serif;font-size:14px;line-height:1.5}
+#pooja .feature-board{height:430px;grid-template-columns:minmax(0,1.7fr) minmax(390px,1fr);gap:9px;padding:9px;border:1px solid rgba(255,219,164,.34);border-radius:24px;background:linear-gradient(135deg,#a8085d,#86024f);box-shadow:0 28px 70px rgba(75,0,38,.24),inset 0 1px 0 rgba(255,255,255,.15);backdrop-filter:none}
+#pooja .feature-hero{height:100%;min-height:0;border-radius:15px}
+#pooja .feature-hero>img{position:absolute;inset:0}
+#pooja .feature-hero::after{background:linear-gradient(90deg,rgba(48,0,28,.75),rgba(48,0,28,.08) 70%),linear-gradient(0deg,rgba(48,0,28,.35),transparent 55%)}
+#pooja .feature-hero>img{object-position:center 44%}
+#pooja .feature-hero>span{left:28px;bottom:24px}
+#pooja .feature-hero strong{max-width:390px;font-size:clamp(32px,3.2vw,46px);line-height:1}
+#pooja .feature-products{height:100%;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:9px}
+#pooja .feature-products>a{height:auto;min-height:0;border:1px solid rgba(255,226,160,.7);border-radius:13px;background:linear-gradient(155deg,#cc3974,#7d0647)}
+#pooja .feature-products>a::after{background:linear-gradient(0deg,rgba(83,0,45,.88),rgba(83,0,45,.04) 76%)}
+#pooja .feature-products img{object-position:center 42%;filter:saturate(.86) brightness(1.04)}
+#pooja .feature-products span{left:12px;right:10px;bottom:10px}
+#pooja .feature-products small{font-size:8px;letter-spacing:.11em}
+#pooja .feature-products strong{font-size:17px;font-weight:600}
+#pooja .feature-products b{margin-top:6px;font-size:10px}
 
 @media(max-width:900px){
-  #pooja .feature-board{grid-template-columns:1fr}
-  #pooja .feature-hero{min-height:480px}
+  #pooja .feature-board{height:auto;grid-template-columns:1fr}
+  #pooja .feature-hero{min-height:440px}
   #pooja .feature-products{grid-template-columns:1fr 1fr;grid-template-rows:none}
-  #pooja .feature-products>a{min-height:230px}
+  #pooja .feature-products>a{min-height:210px}
 }
 @media(max-width:640px){
   #pooja.feature{padding:56px 0}
   #pooja .feature__heading{text-align:center;padding-inline:12px}
   #pooja .feature__heading>p:last-child{font-size:16px}
   #pooja .feature-board{padding:8px;border-radius:20px}
-  #pooja .feature-hero{min-height:390px}
-  #pooja .feature-products{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+  #pooja .feature-hero{height:330px;min-height:0}
+  #pooja .feature-products{display:grid;grid-template-columns:1fr 1fr;overflow:visible}
   #pooja .feature-products::-webkit-scrollbar{display:none}
-  #pooja .feature-products>a{flex:0 0 76%;min-height:220px;scroll-snap-align:start}
+  #pooja .feature-products>a{min-height:160px}
 }
 
 /* Compact and align the festive product copy. */
