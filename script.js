@@ -131,7 +131,7 @@
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (!finePointer.matches || reducedMotion.matches) return;
 
-  const colors = ['#ffd86e', '#ff9ebd', '#ffffff', '#f8bd59'];
+  const colors = ['#fff4b2', '#ffd44d', '#ffffff', '#ffb8d2'];
   let lastX = 0;
   let lastY = 0;
   let lastTime = 0;
@@ -142,7 +142,7 @@
     sparkle.setAttribute('aria-hidden', 'true');
     sparkle.style.left = `${x}px`;
     sparkle.style.top = `${y}px`;
-    sparkle.style.setProperty('--sparkle-size', `${4 + Math.random() * 6}px`);
+    sparkle.style.setProperty('--sparkle-size', `${6 + Math.random() * 7}px`);
     sparkle.style.setProperty('--sparkle-color', colors[Math.floor(Math.random() * colors.length)]);
     sparkle.style.setProperty('--sparkle-x', `${(Math.random() - .5) * 28}px`);
     sparkle.style.setProperty('--sparkle-y', `${-10 - Math.random() * 24}px`);
@@ -158,7 +158,7 @@
     lastY = event.clientY;
     lastTime = now;
     createSparkle(event.clientX, event.clientY);
-    if (Math.random() > .55) createSparkle(event.clientX + (Math.random() - .5) * 14, event.clientY + (Math.random() - .5) * 14);
+    if (Math.random() > .38) createSparkle(event.clientX + (Math.random() - .5) * 16, event.clientY + (Math.random() - .5) * 16);
   }, { passive: true });
 })();
 

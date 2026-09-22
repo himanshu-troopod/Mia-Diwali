@@ -457,5 +457,53 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 }
 @media(hover:none),(pointer:coarse){.cursor-sparkle{display:none}}
 @media(prefers-reduced-motion:reduce){.festive-stage__glint,.cursor-sparkle{display:none}}
+
+/* Ritual section: a quieter, narrower editorial composition. */
+#pooja.feature{padding:clamp(64px,7vw,96px) 0;background:radial-gradient(circle at 8% 16%,rgba(255,255,255,.92),transparent 25%),radial-gradient(circle at 90% 80%,rgba(221,69,118,.12),transparent 30%),linear-gradient(135deg,#fff9f4,#fbe8e8 54%,#f7dce5)}
+#pooja .feature__shell{width:min(1120px,calc(100% - var(--gutter)*2))}
+#pooja .feature__heading{max-width:650px;margin-bottom:30px}
+#pooja .feature__heading .eyebrow{display:block;color:var(--mia-pink)}
+#pooja .feature__heading h2{font-family:'Manrope',sans-serif;font-size:clamp(38px,4vw,58px);font-weight:500;letter-spacing:-.045em;line-height:1.03}
+#pooja .feature__heading>p:last-child{max-width:520px;margin:15px auto 0;color:#765f60;font-family:Georgia,serif;font-size:18px}
+#pooja .feature-board{grid-template-columns:minmax(0,1.75fr) minmax(270px,.65fr);gap:12px;padding:12px;border-color:rgba(129,29,75,.12);border-radius:24px;background:rgba(255,255,255,.72);box-shadow:0 22px 55px rgba(97,31,55,.12);backdrop-filter:blur(14px)}
+#pooja .feature-hero{min-height:570px;border-radius:16px}
+#pooja .feature-hero::after{background:linear-gradient(0deg,rgba(48,0,28,.7),transparent 58%)}
+#pooja .feature-hero>span{left:28px;bottom:28px}
+#pooja .feature-hero strong{max-width:460px;font-size:clamp(32px,3.3vw,46px)}
+#pooja .feature-products{grid-template-columns:1fr;grid-template-rows:repeat(2,1fr);gap:12px}
+#pooja .feature-products>a{min-height:0;border-radius:16px}
+#pooja .feature-products strong{font-size:18px}
+
+@media(max-width:900px){
+  #pooja .feature-board{grid-template-columns:1fr}
+  #pooja .feature-hero{min-height:480px}
+  #pooja .feature-products{grid-template-columns:1fr 1fr;grid-template-rows:none}
+  #pooja .feature-products>a{min-height:230px}
+}
+@media(max-width:640px){
+  #pooja.feature{padding:56px 0}
+  #pooja .feature__heading{text-align:center;padding-inline:12px}
+  #pooja .feature__heading>p:last-child{font-size:16px}
+  #pooja .feature-board{padding:8px;border-radius:20px}
+  #pooja .feature-hero{min-height:390px}
+  #pooja .feature-products{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+  #pooja .feature-products::-webkit-scrollbar{display:none}
+  #pooja .feature-products>a{flex:0 0 76%;min-height:220px;scroll-snap-align:start}
+}
+
+/* Compact and align the festive product copy. */
+.festive-edit .festive-card a{height:auto;min-height:0;display:grid;grid-template-rows:auto 1fr}
+.festive-edit .festive-card__copy{min-height:168px;display:grid;grid-template-rows:auto minmax(48px,auto) auto;align-content:start;padding:18px clamp(18px,1.5vw,24px) 20px}
+.festive-edit .festive-card__copy strong{align-self:start}
+.festive-edit .festive-card__copy em{align-self:end;margin-top:18px;padding-top:0}
+@media(max-width:640px){.festive-edit .festive-card a{min-height:0}.festive-edit .festive-card__copy{min-height:164px}}
+
+/* Separate rounded cards on a soft baby-pink tray. */
+.festive-edit .festive-stage{gap:12px;padding:14px;border:1px solid rgba(151,52,96,.18);background:radial-gradient(circle at 10% 12%,rgba(255,255,255,.7),transparent 23%),linear-gradient(135deg,#f7dce7,#efc9d9 48%,#f5dce7);box-shadow:0 24px 58px rgba(116,32,67,.16),inset 0 1px 0 rgba(255,255,255,.62)}
+.festive-edit .festive-card,.festive-edit .festive-card:first-of-type,.festive-edit .festive-card:last-of-type{border:1px solid rgba(255,220,181,.42);border-radius:22px;background:linear-gradient(160deg,#81224f 0%,#671039 44%,#4f062d 100%)}
+.festive-edit .festive-card__image{background:linear-gradient(155deg,#e8a9be,#c97899 52%,#771c4d)}
+.festive-edit .festive-card__copy{background:linear-gradient(180deg,rgba(93,6,48,.78),rgba(75,3,39,.98))}
+.cursor-sparkle{box-shadow:0 0 11px 4px rgba(255,226,126,.9),0 0 22px 7px rgba(255,255,255,.38);filter:brightness(1.28) saturate(1.08)}
+@media(max-width:1050px){.festive-edit .festive-stage{gap:10px}.festive-edit .festive-card,.festive-edit .festive-card:first-of-type,.festive-edit .festive-card:last-of-type{border-radius:20px}}
 .festive-divider__glyph svg{width:26px;height:26px;display:block}
 @media(max-width:820px){.festive-divider__glyph svg{width:22px;height:22px}}
