@@ -1,4 +1,4 @@
-:root{--mia-pink:#dd4576;--mia-peach:#f4af94;--mia-off-white:#faf4f1;--mia-blush:#f8e8ea;--mia-white:#fff;--text-primary:#111;--text-secondary:#555;--text-muted:#767676;--border:#e8e8e8;--light-surface:#f5f5f5;--mia-gold:#d9b25e;--sale-red:#e33c54;--radius-sm:12px;--radius-md:18px;--radius-lg:28px;--radius-pill:999px;--shadow-sm:0 4px 16px rgba(0,0,0,.04);--shadow-hover:0 8px 24px rgba(0,0,0,.07);--pink:var(--mia-pink);--pink-deep:var(--mia-pink);--pink-dark:#b72f60;--rose:var(--mia-pink);--blush:var(--mia-blush);--ivory:var(--mia-white);--cream:var(--mia-off-white);--gold:var(--mia-gold);--ink:var(--text-primary);--muted:var(--text-muted);--line:var(--border);--shadow:var(--shadow-sm);--shell:1280px;--gutter:clamp(20px,4vw,64px);--section:clamp(64px,7vw,88px);--radius:var(--radius-lg)}
+:root{--mia-pink:#e0286c;--mia-peach:#ffb98f;--mia-off-white:#fff8f2;--mia-blush:#ffe2ea;--mia-white:#fff;--text-primary:#1c0a12;--text-secondary:#5c454b;--text-muted:#8a7378;--border:#f2dbe2;--light-surface:#fdeef1;--mia-gold:#e8ab3c;--sale-red:#e0286c;--radius-sm:8px;--radius-md:14px;--radius-lg:22px;--radius-pill:999px;--shadow-sm:0 6px 18px rgba(180,10,80,.10);--shadow-hover:0 14px 34px rgba(180,10,80,.18);--pink:var(--mia-pink);--pink-deep:#b4004f;--pink-dark:#8a003c;--rose:var(--mia-pink);--blush:var(--mia-blush);--ivory:var(--mia-white);--cream:var(--mia-off-white);--gold:var(--mia-gold);--ink:var(--text-primary);--muted:var(--text-muted);--line:var(--border);--shadow:var(--shadow-sm);--shell:1320px;--gutter:clamp(18px,4vw,64px);--section:clamp(56px,6vw,84px);--radius:var(--radius-lg)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--mia-white);color:var(--text-primary);font-family:"Helvetica Neue",Helvetica,Arial,Inter,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}body.no-scroll{overflow:hidden}a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}img{display:block;max-width:100%}.shell{width:min(var(--shell),calc(100% - var(--gutter)*2));margin-inline:auto}.skip-link{position:fixed;left:16px;top:-60px;z-index:200;background:var(--mia-white);color:var(--mia-pink);padding:12px 16px;border-radius:var(--radius-sm);box-shadow:var(--shadow-sm)}.skip-link:focus{top:16px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .announcement{height:34px;display:flex;align-items:center;justify-content:center;gap:18px;background:var(--pink-deep);color:#fff;font-size:12px;letter-spacing:.04em;overflow:hidden}.announcement>span{color:#f4cf75}.announcement__track{display:flex;align-items:center;gap:14px;white-space:nowrap}.announcement__track i{width:3px;height:3px;border-radius:50%;background:#f4cf75}
 .site-header{position:sticky;top:0;z-index:80;background:rgba(255,250,247,.95);backdrop-filter:blur(18px);border-bottom:1px solid rgba(120,0,68,.08)}.header-inner{height:78px;display:grid;grid-template-columns:190px 1fr auto;align-items:center;gap:24px}.brand{width:136px}.brand img{width:100%;height:54px;object-fit:contain}.desktop-nav{display:flex;justify-content:center;gap:clamp(18px,2.4vw,38px);font-size:14px}.desktop-nav a{position:relative;padding:30px 0}.desktop-nav a::after{content:"";position:absolute;left:0;right:100%;bottom:21px;height:2px;background:var(--pink);transition:right .25s}.desktop-nav a:hover::after,.desktop-nav a:focus-visible::after{right:0}.header-actions{display:flex;align-items:center}.icon-button{position:relative;width:44px;height:44px;border:0;background:transparent;display:grid;place-items:center}.icon-button img{width:22px;height:22px;object-fit:contain}.bag-link span{position:absolute;top:4px;right:0;width:17px;height:17px;border-radius:50%;display:grid;place-items:center;background:var(--pink);color:#fff;font-size:9px}.menu-toggle{display:none}.menu-toggle span{width:20px;height:1.5px;background:var(--ink);margin:2px}.mobile-nav{display:none}.search-panel{position:fixed;left:0;right:0;top:112px;z-index:75;background:#fff;box-shadow:0 18px 35px rgba(67,8,39,.12);transform:translateY(-140%);transition:.3s;visibility:hidden}.search-panel.open{transform:none;visibility:visible}.search-panel__inner{position:relative;padding:28px 0}.search-panel form{max-width:720px;margin:auto}.search-panel label{display:block;margin-bottom:10px;font-family:Georgia,serif;font-size:24px}.search-panel form div{display:flex}.search-panel input{flex:1;min-width:0;height:48px;border:1px solid var(--line);border-radius:12px 0 0 12px;padding:0 15px}.search-panel form button{border:0;background:var(--pink);color:#fff;padding:0 24px;border-radius:0 12px 12px 0;font-weight:700}.search-close{position:absolute;right:0;top:20px;width:42px;height:42px;border:0;background:transparent;font-size:28px;color:var(--pink)}
@@ -332,3 +332,53 @@ footer{background:var(--mia-white);border-color:var(--border)}
   .gold-rail-wrap{margin-top:40px}
   .gold-rail-wrap>header small{display:none}
 }
+
+
+/* ============================================================
+   Festive Maximalist visual language
+   Leans into the brand's existing festive energy, disciplined by
+   one locked accent pair (pink + gold) — bold geometric display
+   type, bento composition, higher-energy motion kept but purposeful.
+   Reference lock: brand pink/gold as the ONLY saturated accents
+   (no new hue introduced); a bento asymmetric grid for the
+   Festive Edit instead of four equal cards; the diya-flame and
+   firework canvas kept as the brand's own signature motion, not decoration.
+   ============================================================ */
+
+body{font-family:'Manrope',"Helvetica Neue",Helvetica,Arial,sans-serif}
+h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;letter-spacing:-.01em}
+.section-heading h2,.lookbook__intro h2,.feature__heading h2,.gold-edit h2,.closing-inner h2,.collections__head h2,.discover__copy h2,.personalise h2{
+  font-family:'Unbounded',sans-serif;font-weight:700;font-size:clamp(30px,3.6vw,50px);letter-spacing:-.01em;line-height:1.05}
+.eyebrow{font-family:'Manrope',sans-serif;font-weight:700;letter-spacing:.16em;font-size:11px;color:var(--mia-pink)}
+
+/* Eyebrow restraint: keep 4 of 9 (Festive Edit, Festive Fun, Gifting Guide, Most Gifted) */
+#pooja .eyebrow,#lookbook .lookbook__intro .eyebrow,
+.gold-edit__copy .eyebrow,.personalise__inner .eyebrow{display:none}
+
+/* Shape lock: sharper radius, pill reserved for primary CTAs only */
+.festive-card,.feature-hero,.feature-products>a,.look,.discover-card,.collection-banner,
+.gift-card,.gold-rail>a,.product-card,.steps article,.modal-card{border-radius:var(--radius-sm)}
+.hero{border-radius:var(--radius-md)}
+.button{border-radius:var(--radius-pill)}
+
+/* Hero: bolder, punchier lockup card (kept, restyled) */
+.hero-title-card{border-color:rgba(255,196,120,.85);background:linear-gradient(114deg,rgba(180,0,79,.97),rgba(224,40,108,.92));border-radius:var(--radius-md)}
+.hero-title-brand{font-family:'Manrope',sans-serif;font-weight:800;letter-spacing:.34em}
+.hero-title-card h1.hero-title-diwali{font-family:'Unbounded',sans-serif;font-style:normal;font-weight:700;letter-spacing:-.02em}
+
+/* Festive Edit -> bento: one feature tile + three supporting tiles */
+.festive-stage--bento{grid-template-columns:repeat(3,1fr);grid-template-rows:auto auto;gap:16px}
+.festive-stage--bento .festive-card--feature{grid-column:1/4}
+.festive-stage--bento .festive-card--feature .festive-card__image{aspect-ratio:21/9}
+.festive-stage--bento .festive-card:not(.festive-card--feature) .festive-card__image{aspect-ratio:1/1}
+@media(max-width:1050px){.festive-stage--bento{grid-template-columns:1fr 1fr}.festive-stage--bento .festive-card--feature{grid-column:1/3}}
+@media(max-width:640px){.festive-stage--bento{grid-template-columns:1fr}.festive-stage--bento .festive-card--feature{grid-column:1/2}}
+
+/* Cards: hover lift + gold hairline, motion motivated by "tap me" affordance */
+.festive-card,.product-card,.gift-card,.discover-card{transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s}
+.festive-card:hover,.product-card:hover,.gift-card:hover,.discover-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover)}
+.festive-card__copy em,.gift-card>b,.product-card>a{color:var(--mia-pink);font-weight:700}
+
+/* Closing CTA: brand's own dark moment, kept bold */
+.closing-cta{background:radial-gradient(circle at 70% 22%,#e0286c,#8a003c 46%,#2c0016);color:#fff}
+.button.ivory{background:#fff5ea;color:#8a003c}
