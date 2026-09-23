@@ -293,6 +293,47 @@ footer{background:var(--mia-white);border-color:var(--border)}
   .hero-light-wash,.hero-title-card::before,.hero-title-card::after,.hero-title-diya i{animation:none}
 }
 
+/* Staggered warm blink for the hanging hero bulbs. */
+.hero-lights i::after{
+  transform-origin:center;
+  animation:heroBulbBlink 1.9s ease-in-out infinite;
+  animation-delay:var(--hero-bulb-delay,0s);
+}
+.hero-lights i:nth-child(1){--hero-bulb-delay:-.10s}
+.hero-lights i:nth-child(2){--hero-bulb-delay:-.85s}
+.hero-lights i:nth-child(3){--hero-bulb-delay:-1.45s}
+.hero-lights i:nth-child(4){--hero-bulb-delay:-.35s}
+.hero-lights i:nth-child(5){--hero-bulb-delay:-1.15s}
+.hero-lights i:nth-child(6){--hero-bulb-delay:-1.70s}
+.hero-lights i:nth-child(7){--hero-bulb-delay:-.60s}
+.hero-lights i:nth-child(8){--hero-bulb-delay:-1.30s}
+.hero-lights i:nth-child(9){--hero-bulb-delay:-.20s}
+.hero-lights i:nth-child(10){--hero-bulb-delay:-1.55s}
+.hero-lights i:nth-child(11){--hero-bulb-delay:-.75s}
+.hero-lights i:nth-child(12){--hero-bulb-delay:-1.05s}
+.hero-lights i:nth-child(13){--hero-bulb-delay:-.45s}
+.hero-lights i:nth-child(14){--hero-bulb-delay:-1.80s}
+@keyframes heroBulbBlink{
+  0%,18%,100%{
+    opacity:1;
+    transform:translateX(-50%) scale(1);
+    filter:brightness(1.12);
+    box-shadow:0 0 15px 5px rgba(255,195,72,.78);
+  }
+  42%,58%{
+    opacity:.42;
+    transform:translateX(-50%) scale(.9);
+    filter:brightness(.72);
+    box-shadow:0 0 5px 1px rgba(255,195,72,.28);
+  }
+  74%{
+    opacity:.86;
+    transform:translateX(-50%) scale(1.04);
+    filter:brightness(1.25);
+    box-shadow:0 0 18px 6px rgba(255,214,112,.88);
+  }
+}
+
 /* ===== Hero image framing for the pooja campaign still (1:1 source) ===== */
 .hero__image{object-position:center 32%}
 .hero__shade{background:linear-gradient(0deg,rgba(55,0,31,.52),rgba(55,0,31,.06) 46%,transparent 70%)}
@@ -513,7 +554,7 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 .festive-edit .festive-card,.festive-edit .festive-card:first-of-type,.festive-edit .festive-card:last-of-type{border:1px solid rgba(255,220,181,.42);border-radius:22px;background:linear-gradient(160deg,#81224f 0%,#671039 44%,#4f062d 100%)}
 .festive-edit .festive-card__image{background:linear-gradient(155deg,#e8a9be,#c97899 52%,#771c4d)}
 .festive-edit .festive-card__copy{background:linear-gradient(180deg,rgba(93,6,48,.78),rgba(75,3,39,.98))}
-.cursor-sparkle{box-shadow:0 0 11px 4px rgba(255,226,126,.9),0 0 22px 7px rgba(255,255,255,.38);filter:brightness(1.28) saturate(1.08)}
+.cursor-sparkle{box-shadow:0 0 7px 3px rgba(255,255,255,.98),0 0 17px 7px rgba(255,222,105,.98),0 0 30px 11px rgba(255,112,172,.48);filter:brightness(1.65) saturate(1.2)}
 @media(max-width:1050px){.festive-edit .festive-stage{gap:10px}.festive-edit .festive-card,.festive-edit .festive-card:first-of-type,.festive-edit .festive-card:last-of-type{border-radius:20px}}
 .festive-divider__glyph svg{width:26px;height:26px;display:block}
 @media(max-width:820px){.festive-divider__glyph svg{width:22px;height:22px}}
