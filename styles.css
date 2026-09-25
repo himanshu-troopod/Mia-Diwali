@@ -680,3 +680,13 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
    or gold-rail, which switch to a static grid on desktop) but had no scroll affordance, unlike
    those other two galleries which both say "Swipe to explore". */
 .collections-swipe-hint{margin:6px 0 0;color:var(--muted);text-align:center;font-size:12px}
+
+/* Click-to-scroll arrows for Latest Collections, for mouse users without an easy horizontal
+   scroll gesture; touch/trackpad drag and the swipe hint above already cover everyone else. */
+.collection-track-wrap{position:relative}
+.collection-arrow{position:absolute;top:170px;z-index:5;width:44px;height:44px;border:1px solid rgba(176,0,104,.16);border-radius:50%;background:rgba(255,255,255,.94);color:var(--mia-pink);font-size:22px;line-height:1;display:grid;place-items:center;box-shadow:var(--shadow-sm);transition:opacity .2s,transform .2s}
+.collection-arrow:hover:not(:disabled){transform:scale(1.06)}
+.collection-arrow:disabled{opacity:.35;cursor:default}
+.collection-arrow--prev{left:12px}
+.collection-arrow--next{right:12px}
+@media(max-width:820px){.collection-arrow{display:none}}
