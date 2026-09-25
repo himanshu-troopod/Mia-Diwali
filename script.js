@@ -44,6 +44,27 @@
     reveals.forEach(element => observer.observe(element));
   }
 
+  const collectionTrack = document.querySelector('.collection-track');
+  const collectionPrev = document.querySelector('.collection-arrow--prev');
+  const collectionNext = document.querySelector('.collection-arrow--next');
+  if (collectionTrack && collectionPrev && collectionNext) {
+    const scrollStep = () => {
+      const card = collectionTrack.querySelector('.collection-card');
+      const gap = parseFloat(getComputedStyle(collectionTrack).columnGap) || 0;
+      return card ? card.getBoundingClientRect().width + gap : collectionTrack.clientWidth;
+    };
+    const updateCollectionArrows = () => {
+      const max = collectionTrack.scrollWidth - collectionTrack.clientWidth - 1;
+      collectionPrev.disabled = collectionTrack.scrollLeft <= 0;
+      collectionNext.disabled = collectionTrack.scrollLeft >= max;
+    };
+    collectionPrev.addEventListener('click', () => collectionTrack.scrollBy({ left: -scrollStep(), behavior: 'smooth' }));
+    collectionNext.addEventListener('click', () => collectionTrack.scrollBy({ left: scrollStep(), behavior: 'smooth' }));
+    collectionTrack.addEventListener('scroll', updateCollectionArrows, { passive: true });
+    window.addEventListener('resize', updateCollectionArrows);
+    updateCollectionArrows();
+  }
+
   document.querySelectorAll('.wish').forEach(button => button.addEventListener('click', () => {
     const active = button.getAttribute('aria-pressed') === 'true';
     button.setAttribute('aria-pressed', String(!active));
