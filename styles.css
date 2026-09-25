@@ -646,14 +646,14 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 @media(max-width:640px){.discover-lights{height:36px}.discover-lights i{height:15px}}
 
 /* Restore the Gold & Diamonds Edit (Dhanteras) section to its intended rich backdrop. */
-.gold-edit{background:linear-gradient(120deg,#480028,#87014f 52%,#b8752f);color:#fff}
+.gold-edit{background:linear-gradient(120deg,var(--pink-deep) 0%,var(--mia-pink) 55%,#b8752f 100%);color:#fff}
 .gold-edit__pattern{display:block}
 .gold-edit__copy p:not(.eyebrow){color:#fce5ee}
 .gold-rail-wrap>header{color:#f8d687}
 .gold-rail-wrap>header small{color:rgba(255,255,255,.75)}
 
 /* Restore Personalise to its intended rich backdrop; keep the white step cards legible on it. */
-.personalise{background:linear-gradient(120deg,#4b002b,#9b0459 58%,#d94f83);color:#fff}
+.personalise{background:linear-gradient(120deg,var(--pink-deep) 0%,var(--mia-pink) 58%,#e17b9d 100%);color:#fff}
 .personalise::after{display:block}
 .personalise__inner>div:first-child>p:not(.eyebrow){color:#f8dbe8}
 .steps strong{color:var(--text-primary)}
