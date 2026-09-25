@@ -610,3 +610,25 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 .festive-edit .festive-card:hover .festive-card__copy b{transform:translateX(4px)}
 .festive-edit .festive-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
 .festive-edit .wish{z-index:3}
+
+/* Pooja Essentials product cards: white backdrop, evenly aligned 2x2 grid. */
+#pooja .feature-board{height:auto;align-items:stretch}
+#pooja .feature-hero{height:100%;min-height:480px}
+#pooja .feature-products{height:100%;grid-template-rows:repeat(2,auto);align-items:stretch}
+#pooja .feature-products>a{position:relative;height:auto;min-height:0;display:flex;flex-direction:column;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--mia-white);box-shadow:var(--shadow-sm)}
+#pooja .feature-products>a::after{display:none}
+#pooja .feature-products img{position:static;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;filter:none;background:var(--light-surface)}
+#pooja .feature-products span{position:static;left:auto;right:auto;bottom:auto;display:flex;flex-direction:column;padding:14px 14px 16px;color:var(--text-primary)}
+#pooja .feature-products small{color:var(--text-muted);font-size:10px;font-weight:400;letter-spacing:.1em}
+#pooja .feature-products strong{margin-top:6px;color:var(--text-primary);font-size:17px;font-weight:600}
+#pooja .feature-products b{display:inline-block;margin-top:10px;color:var(--mia-pink);font-size:12px;font-weight:700;transition:transform .25s}
+#pooja .feature-products>a:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+#pooja .feature-products>a:hover img{transform:scale(1.03)}
+#pooja .feature-products>a:hover b{transform:translateX(4px)}
+@media(max-width:900px){
+  #pooja .feature-products{grid-template-rows:repeat(2,auto)}
+  #pooja .feature-products>a{min-height:0}
+}
+@media(max-width:640px){
+  #pooja .feature-products>a{min-height:0}
+}
