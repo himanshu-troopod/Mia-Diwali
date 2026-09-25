@@ -690,3 +690,36 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 .collection-arrow--prev{left:12px}
 .collection-arrow--next{right:12px}
 @media(max-width:820px){.collection-arrow{display:none}}
+
+
+/* Give the landing-page product cards a clear Mia-pink CTA. */
+.festive-edit .festive-card__copy em{
+  width:100%;
+  min-height:42px;
+  padding:0 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-radius:var(--radius-pill);
+  background:linear-gradient(90deg,#C3116D,#E82F8B 64%,#ED509C);
+  color:#fff;
+  box-shadow:0 8px 18px rgba(195,17,109,.2);
+}
+
+/* Cool the hero video's strong amber cast with a soft pink-white finish. */
+.hero__image{
+  filter:saturate(.64) brightness(1.08) contrast(.94);
+}
+.hero-light-wash{
+  background:
+    linear-gradient(rgba(255,250,252,.15),rgba(255,242,248,.20)),
+    radial-gradient(circle at 50% 22%,rgba(255,255,255,.20),transparent 42%),
+    linear-gradient(112deg,rgba(237,80,156,.12),rgba(255,255,255,.08) 54%,rgba(232,47,139,.10));
+}
+
+/* Let the hero video fill the full desktop canvas without a white frame. */
+.hero{
+  width:100%;
+  margin:0;
+  border-radius:0;
+}
