@@ -644,3 +644,19 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 .discover-lights i{position:relative;width:2px;height:20px;background:rgba(255,255,255,.45)}
 .discover-lights i::after{content:"";position:absolute;left:50%;bottom:-10px;width:10px;height:14px;transform:translateX(-50%);border-radius:50% 50% 44% 44%;background:#ffd46f;box-shadow:0 0 12px 4px rgba(255,195,72,.8)}
 @media(max-width:640px){.discover-lights{height:36px}.discover-lights i{height:15px}}
+
+/* Restore the Gold & Diamonds Edit (Dhanteras) section to its intended rich backdrop. */
+.gold-edit{background:linear-gradient(120deg,#480028,#87014f 52%,#b8752f);color:#fff}
+.gold-edit__pattern{display:block}
+.gold-edit__copy p:not(.eyebrow){color:#fce5ee}
+.gold-rail-wrap>header{color:#f8d687}
+.gold-rail-wrap>header small{color:rgba(255,255,255,.75)}
+
+/* Restore Personalise to its intended rich backdrop; keep the white step cards legible on it. */
+.personalise{background:linear-gradient(120deg,#4b002b,#9b0459 58%,#d94f83);color:#fff}
+.personalise::after{display:block}
+.personalise__inner>div:first-child>p:not(.eyebrow){color:#f8dbe8}
+.steps strong{color:var(--text-primary)}
+
+/* A quiet festive sign-off above the footer. */
+.footer-lights{height:10px;background:radial-gradient(ellipse at center,#ffe89b 0 2px,#c78d31 3px 4px,transparent 5px) 0 0/30px 10px,linear-gradient(90deg,var(--mia-pink),var(--pink-deep))}
