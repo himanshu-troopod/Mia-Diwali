@@ -497,7 +497,7 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 @media(prefers-reduced-motion:reduce){.festive-stage__glint,.cursor-sparkle{display:none}}
 
 /* Pooja Essentials: a warm, diya-lit editorial board. */
-#pooja.feature{position:relative;isolation:isolate;padding:clamp(64px,6vw,86px) 0;overflow:hidden;background:linear-gradient(115deg,rgba(210,175,174,.92),rgba(195,123,151,.9)),url('assets/hero-pooja-diwali.jpg') center 58%/cover no-repeat}
+#pooja.feature{position:relative;isolation:isolate;padding:clamp(64px,6vw,86px) 0;overflow:hidden;background:linear-gradient(120deg,var(--mia-pink) 0%,#d31672 55%,var(--pink-deep) 100%)}
 #pooja.feature::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 5% 8%,rgba(255,217,102,.42) 0 2px,transparent 3px),radial-gradient(circle at 91% 18%,rgba(255,218,149,.28) 0 2px,transparent 3px),linear-gradient(90deg,rgba(255,245,230,.12),transparent 35%,rgba(103,0,52,.08));background-size:74px 74px,96px 96px,auto;opacity:.78}
 #pooja.feature::after{content:"";position:absolute;inset:auto -5% -28% -5%;z-index:-1;height:64%;background:linear-gradient(0deg,rgba(87,0,43,.28),transparent),radial-gradient(ellipse at 50% 100%,rgba(255,224,168,.3),transparent 58%);filter:blur(2px)}
 #pooja .feature__glow{background:radial-gradient(circle at 10% 20%,rgba(255,236,187,.25),transparent 22%),radial-gradient(circle at 88% 70%,rgba(255,201,222,.2),transparent 32%)}
