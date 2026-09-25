@@ -660,3 +660,13 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 
 /* A quiet festive sign-off above the footer. */
 .footer-lights{height:10px;background:radial-gradient(ellipse at center,#ffe89b 0 2px,#c78d31 3px 4px,transparent 5px) 0 0/30px 10px,linear-gradient(90deg,var(--mia-pink),var(--pink-deep))}
+
+/* Pooja Essentials: the white product-card conversion made the section noticeably taller than
+   its neighbours (~990px vs ~600-700px elsewhere). Tighten the card image and copy panel and
+   trim the section padding so it sits at a similar height to the rest of the page. */
+#pooja.feature{padding:clamp(46px,4.5vw,64px) 0}
+#pooja .feature-hero{min-height:420px}
+#pooja .feature-products img{aspect-ratio:4/3}
+#pooja .feature-products span{padding:10px 12px 12px}
+#pooja .feature-products strong{margin-top:4px}
+#pooja .feature-products b{margin-top:6px}
