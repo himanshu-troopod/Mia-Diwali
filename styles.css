@@ -1,4 +1,4 @@
-:root{--mia-pink:#e0286c;--mia-peach:#ffb98f;--mia-off-white:#fff8f2;--mia-blush:#ffe2ea;--mia-white:#fff;--mia-warm-white:#fffaf3;--text-primary:#1c0a12;--text-secondary:#5c454b;--text-muted:#8a7378;--border:#f2dbe2;--light-surface:#fdeef1;--mia-gold:#e8ab3c;--sale-red:#e0286c;--radius-sm:8px;--radius-md:14px;--radius-lg:22px;--radius-pill:999px;--shadow-sm:0 6px 18px rgba(180,10,80,.10);--shadow-hover:0 14px 34px rgba(180,10,80,.18);--pink:var(--mia-pink);--pink-deep:#b4004f;--pink-dark:#8a003c;--rose:var(--mia-pink);--blush:var(--mia-blush);--ivory:var(--mia-white);--cream:var(--mia-off-white);--gold:var(--mia-gold);--ink:var(--text-primary);--muted:var(--text-muted);--line:var(--border);--shadow:var(--shadow-sm);--shell:1320px;--gutter:clamp(18px,4vw,64px);--section:clamp(56px,6vw,84px);--radius:var(--radius-lg)}
+:root{--mia-pink:#D14A61;--mia-peach:#F6DBDF;--mia-off-white:#FFFFFF;--mia-blush:#F6DBDF;--mia-white:#FFFFFF;--mia-warm-white:#FFFFFF;--text-primary:#212121;--text-secondary:#3C3C3C;--text-muted:#5E5E5E;--border:#F6DBDF;--light-surface:#F8F8F8;--mia-gold:#e8ab3c;--sale-red:#D14A61;--radius-sm:8px;--radius-md:14px;--radius-lg:22px;--radius-pill:999px;--shadow-sm:0 6px 18px rgba(131,39,41,.10);--shadow-hover:0 14px 34px rgba(131,39,41,.18);--pink:var(--mia-pink);--pink-deep:#832729;--pink-dark:#6E0D1D;--rose:var(--mia-pink);--blush:var(--mia-blush);--ivory:var(--mia-white);--cream:var(--mia-off-white);--gold:var(--mia-gold);--ink:var(--text-primary);--muted:var(--text-muted);--line:var(--border);--shadow:var(--shadow-sm);--shell:1320px;--gutter:clamp(18px,4vw,64px);--section:clamp(56px,6vw,84px);--radius:var(--radius-lg)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--mia-white);color:var(--text-primary);font-family:"Helvetica Neue",Helvetica,Arial,Inter,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}body.no-scroll{overflow:hidden}a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}img{display:block;max-width:100%}.shell{width:min(var(--shell),calc(100% - var(--gutter)*2));margin-inline:auto}.skip-link{position:fixed;left:16px;top:-60px;z-index:200;background:var(--mia-white);color:var(--mia-pink);padding:12px 16px;border-radius:var(--radius-sm);box-shadow:var(--shadow-sm)}.skip-link:focus{top:16px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .announcement{height:34px;display:flex;align-items:center;justify-content:center;gap:18px;background:var(--pink-deep);color:#fff;font-size:12px;letter-spacing:.04em;overflow:hidden}.announcement>span{color:#f4cf75}.announcement__track{display:flex;align-items:center;gap:14px;white-space:nowrap}.announcement__track i{width:3px;height:3px;border-radius:50%;background:#f4cf75}
 .site-header{position:sticky;top:0;z-index:80;background:rgba(255,250,247,.95);backdrop-filter:blur(18px);border-bottom:1px solid rgba(120,0,68,.08)}.header-inner{height:78px;display:grid;grid-template-columns:190px 1fr auto;align-items:center;gap:24px}.brand{width:136px}.brand img{width:100%;height:54px;object-fit:contain}.desktop-nav{display:flex;justify-content:center;gap:clamp(18px,2.4vw,38px);font-size:14px}.desktop-nav a{position:relative;padding:30px 0}.desktop-nav a::after{content:"";position:absolute;left:0;right:100%;bottom:21px;height:2px;background:var(--pink);transition:right .25s}.desktop-nav a:hover::after,.desktop-nav a:focus-visible::after{right:0}.header-actions{display:flex;align-items:center}.icon-button{position:relative;width:44px;height:44px;border:0;background:transparent;display:grid;place-items:center}.icon-button img{width:22px;height:22px;object-fit:contain}.bag-link span{position:absolute;top:4px;right:0;width:17px;height:17px;border-radius:50%;display:grid;place-items:center;background:var(--pink);color:#fff;font-size:9px}.menu-toggle{display:none}.menu-toggle span{width:20px;height:1.5px;background:var(--ink);margin:2px}.mobile-nav{display:none}.search-panel{position:fixed;left:0;right:0;top:112px;z-index:75;background:#fff;box-shadow:0 18px 35px rgba(67,8,39,.12);transform:translateY(-140%);transition:.3s;visibility:hidden}.search-panel.open{transform:none;visibility:visible}.search-panel__inner{position:relative;padding:28px 0}.search-panel form{max-width:720px;margin:auto}.search-panel label{display:block;margin-bottom:10px;font-family:Georgia,serif;font-size:24px}.search-panel form div{display:flex}.search-panel input{flex:1;min-width:0;height:48px;border:1px solid var(--line);border-radius:12px 0 0 12px;padding:0 15px}.search-panel form button{border:0;background:var(--pink);color:#fff;padding:0 24px;border-radius:0 12px 12px 0;font-weight:700}.search-close{position:absolute;right:0;top:20px;width:42px;height:42px;border:0;background:transparent;font-size:28px;color:var(--pink)}
@@ -378,11 +378,11 @@ footer{background:var(--mia-white);border-color:var(--border)}
    firework canvas kept as the brand's own signature motion, not decoration.
    ============================================================ */
 
-body{font-family:'Manrope',"Helvetica Neue",Helvetica,Arial,sans-serif}
-h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;letter-spacing:-.01em}
+body{font-family:'Albert Sans',Arial,sans-serif}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:500;letter-spacing:-.01em}
 .section-heading h2,.lookbook__intro h2,.feature__heading h2,.gold-edit h2,.closing-inner h2,.collections__head h2,.discover__copy h2,.personalise h2{
-  font-family:'Unbounded',sans-serif;font-weight:700;font-size:clamp(30px,3.6vw,50px);letter-spacing:-.01em;line-height:1.05}
-.eyebrow{font-family:'Manrope',sans-serif;font-weight:700;letter-spacing:.16em;font-size:11px;color:var(--mia-pink)}
+  font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:clamp(30px,3.6vw,50px);letter-spacing:-.01em;line-height:1.05}
+.eyebrow{font-family:'Albert Sans',Arial,sans-serif;font-weight:700;letter-spacing:.16em;font-size:11px;color:var(--mia-pink)}
 
 /* Eyebrow restraint: keep 4 of 9 (Festive Edit, Festive Fun, Gifting Guide, Most Gifted) */
 #pooja .eyebrow,#lookbook .lookbook__intro .eyebrow,
@@ -396,8 +396,8 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 
 /* Hero: bolder, punchier lockup card (kept, restyled) */
 .hero-title-card{border-color:rgba(255,196,120,.85);background:linear-gradient(114deg,rgba(180,0,79,.97),rgba(224,40,108,.92));border-radius:var(--radius-md)}
-.hero-title-brand{font-family:'Manrope',sans-serif;font-weight:800;letter-spacing:.34em}
-.hero-title-card h1.hero-title-diwali{font-family:'Unbounded',sans-serif;font-style:normal;font-weight:700;letter-spacing:-.02em}
+.hero-title-brand{font-family:'Albert Sans',Arial,sans-serif;font-weight:700;letter-spacing:.34em}
+.hero-title-card h1.hero-title-diwali{font-family:'Fraunces',Georgia,serif;font-style:normal;font-weight:600;letter-spacing:-.02em}
 
 /* Festive Edit -> bento: one feature tile + three supporting tiles */
 .festive-stage--bento{grid-template-columns:repeat(3,1fr);grid-template-rows:auto auto;gap:16px}
@@ -413,8 +413,8 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 .festive-card__copy em,.gift-card>b,.product-card>a{color:var(--mia-pink);font-weight:700}
 
 /* Closing CTA: brand's own dark moment, kept bold */
-.closing-cta{background:radial-gradient(circle at 70% 22%,#e0286c,#8a003c 46%,#2c0016);color:#fff}
-.button.ivory{background:#fff5ea;color:#8a003c}
+.closing-cta{background:radial-gradient(circle at 70% 22%,#D14A61,#832729 46%,#6E0D1D);color:#fff}
+.button.ivory{background:#FFFFFF;color:#832729}
 
 /* Gold connective thread: rangoli-motif dividers at section seams,
    giving the mid-page a warm festival cue beyond the pink brand accent. */
@@ -444,13 +444,8 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 .festive-ambient{position:absolute;z-index:-2;width:32rem;height:32rem;border-radius:50%;filter:blur(75px);opacity:.5;pointer-events:none}
 .festive-ambient--left{left:-16rem;top:10%;background:rgba(255,215,119,.48)}
 .festive-ambient--right{right:-17rem;bottom:-7rem;background:rgba(170,29,94,.22)}
-.festive-lamps{position:absolute;inset:0 0 auto;z-index:-1;height:17rem;pointer-events:none}
-.festive-lamp{position:absolute;top:0;width:1px;height:6.5rem;background:linear-gradient(rgba(99,43,43,.18),rgba(99,43,43,.02))}
-.festive-lamp::before{content:"";position:absolute;left:50%;bottom:-1px;width:5.2rem;height:2.6rem;border-radius:55% 55% 18% 18%;background:linear-gradient(#8d4a40,#4b171f);opacity:.17;transform:translateX(-50%);filter:blur(1px)}
-.festive-lamp i{position:absolute;left:50%;bottom:-1.8rem;width:4.5rem;height:4.5rem;border-radius:50%;background:rgba(255,215,137,.48);transform:translateX(-50%);filter:blur(20px)}
-.festive-lamp--one{left:10%;height:5rem}.festive-lamp--two{left:50%;height:4rem;opacity:.56}.festive-lamp--three{right:10%;height:7.5rem}
 .festive-edit .section-heading{position:relative;z-index:2;max-width:68rem;margin-inline:auto;margin-bottom:34px;text-align:center}
-.festive-edit .section-heading h2{font-family:'Manrope',sans-serif;font-size:clamp(42px,5vw,72px);font-weight:500;letter-spacing:-.055em;line-height:1.02}
+.festive-edit .section-heading h2{font-family:'Fraunces',Georgia,serif;font-size:clamp(42px,5vw,72px);font-weight:500;letter-spacing:-.055em;line-height:1.02}
 .festive-edit .section-heading>p:last-child{margin-top:14px;color:#8b5e54;font-family:Georgia,serif;font-size:clamp(17px,1.45vw,22px)}
 .festive-edit .eyebrow{color:#8d0055;font-weight:800;letter-spacing:.26em}
 .festive-edit .festive-stage{
@@ -470,8 +465,8 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 .festive-edit .festive-card__image img{width:100%;height:100%;object-fit:cover;mix-blend-mode:screen;filter:saturate(.78) contrast(1.08);transition:transform .6s cubic-bezier(.2,.7,.2,1),filter .6s}
 .festive-edit .festive-card:hover .festive-card__image img{transform:scale(1.055);filter:saturate(1) contrast(1.08)}
 .festive-edit .festive-card__copy{min-height:170px;padding:16px clamp(16px,1.5vw,24px) 22px;color:#fff}
-.festive-edit .festive-card__copy small{color:#ffe28d;font-family:'Manrope',sans-serif;font-size:11px;font-weight:800;letter-spacing:.09em}
-.festive-edit .festive-card__copy strong{margin-top:8px;font-family:'Manrope',sans-serif;font-size:clamp(16px,1.25vw,21px);font-weight:700;line-height:1.25}
+.festive-edit .festive-card__copy small{color:#ffe28d;font-family:'Albert Sans',Arial,sans-serif;font-size:11px;font-weight:800;letter-spacing:.09em}
+.festive-edit .festive-card__copy strong{margin-top:8px;font-family:'Albert Sans',Arial,sans-serif;font-size:clamp(16px,1.25vw,21px);font-weight:700;line-height:1.25}
 .festive-edit .festive-card__copy em{margin-top:auto;padding-top:22px;color:#ffe28d;font-size:13px;font-weight:700}
 .festive-edit .festive-card__copy b{display:inline-block;transition:transform .25s}.festive-edit .festive-card:hover .festive-card__copy b{transform:translateX(5px)}
 .festive-stage__glint{position:absolute;z-index:4;width:4px;height:4px;border-radius:50%;background:#fff4be;box-shadow:0 0 10px 3px rgba(255,220,134,.7);animation:festiveTwinkle 2.4s ease-in-out infinite;pointer-events:none}
@@ -490,7 +485,7 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
   .festive-swipe-hint{display:block}
 }
 @media(max-width:640px){
-  .festive-edit{padding-top:64px}.festive-lamp--two{display:none}.festive-edit .section-heading.centered{text-align:center}.festive-edit .section-heading h2{font-size:clamp(39px,12vw,54px)}
+  .festive-edit{padding-top:64px}.festive-edit .section-heading.centered{text-align:center}.festive-edit .section-heading h2{font-size:clamp(39px,12vw,54px)}
   .festive-edit .section-heading>p:last-child{font-size:16px}.festive-edit .festive-stage{padding:9px;border-radius:22px}.festive-edit .festive-card{flex-basis:min(78vw,310px)}.festive-edit .festive-card a{min-height:470px}
 }
 @media(hover:none),(pointer:coarse){.cursor-sparkle{display:none}}
@@ -504,8 +499,8 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 #pooja .feature__shell{width:min(1220px,calc(100% - var(--gutter)*2))}
 #pooja .feature__heading{max-width:680px;margin-bottom:24px;text-align:center}
 #pooja .feature__heading .eyebrow{display:block;margin-bottom:10px;color:#111;font-size:10px}
-#pooja .feature__heading h2{font-family:'Manrope',sans-serif;font-size:clamp(34px,3.6vw,52px);font-weight:500;letter-spacing:-.045em;line-height:1.02;color:#111}
-#pooja .feature__heading>p:last-child{max-width:560px;margin:12px auto 0;color:#111;font-family:'Manrope',sans-serif;font-size:14px;line-height:1.5}
+#pooja .feature__heading h2{font-family:'Fraunces',Georgia,serif;font-size:clamp(34px,3.6vw,52px);font-weight:500;letter-spacing:-.045em;line-height:1.02;color:#111}
+#pooja .feature__heading>p:last-child{max-width:560px;margin:12px auto 0;color:#111;font-family:'Albert Sans',Arial,sans-serif;font-size:14px;line-height:1.5}
 #pooja .feature-board{height:430px;grid-template-columns:minmax(0,1.7fr) minmax(390px,1fr);gap:9px;padding:9px;border:1px solid rgba(255,219,164,.34);border-radius:24px;background:linear-gradient(135deg,#a8085d,#86024f);box-shadow:0 28px 70px rgba(75,0,38,.24),inset 0 1px 0 rgba(255,255,255,.15);backdrop-filter:none}
 #pooja .feature-hero{height:100%;min-height:0;border-radius:15px}
 #pooja .feature-hero>img{position:absolute;inset:0}
@@ -559,7 +554,7 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 /* Keep the complete Festive Edit visible as one desktop composition. */
 @media(min-width:821px){
   .festive-edit{padding-block:clamp(48px,5vw,68px);scroll-margin-top:78px}
-  .festive-edit>.shell{width:min(1180px,calc(100% - 48px))}
+  .festive-edit>.shell{width:min(1080px,calc(100% - 72px))}
   .festive-edit .section-heading{margin-bottom:26px}
   .festive-edit .section-heading h2{font-size:clamp(42px,4.25vw,62px)}
   .festive-edit .festive-stage{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;padding:12px;overflow:visible}
@@ -573,7 +568,7 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 }
 
 @media(min-width:821px) and (max-width:1050px){
-  .festive-edit>.shell{width:calc(100% - 32px)}
+  .festive-edit>.shell{width:calc(100% - 48px)}
   .festive-edit .festive-stage{gap:8px;padding:10px}
   .festive-edit .festive-card,.festive-edit .festive-card:first-of-type,.festive-edit .festive-card:last-of-type{border-radius:16px}
   .festive-edit .festive-card__copy{min-height:148px;padding:13px 12px 15px}
@@ -691,7 +686,6 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
 .collection-arrow--next{right:12px}
 @media(max-width:820px){.collection-arrow{display:none}}
 
-
 /* Give the landing-page product cards a clear Mia-pink CTA. */
 .festive-edit .festive-card__copy em{
   width:100%;
@@ -701,7 +695,7 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
   align-items:center;
   justify-content:space-between;
   border-radius:var(--radius-pill);
-  background:linear-gradient(90deg,#C3116D,#E82F8B 64%,#ED509C);
+  background:#D14A61;
   color:#fff;
   box-shadow:0 8px 18px rgba(195,17,109,.2);
 }
@@ -722,4 +716,130 @@ h1,h2,h3,h4{font-family:'Unbounded','Helvetica Neue',sans-serif;font-weight:700;
   width:100%;
   margin:0;
   border-radius:0;
+}
+
+/* Official Mia asset sync: palette and typography extracted from the supplied site archive. */
+body,button,input,textarea,select{font-family:'Albert Sans',Arial,sans-serif}
+h1,h2,h3,h4,
+.section-heading h2,.lookbook__intro h2,.feature__heading h2,.gold-edit h2,
+.closing-inner h2,.collections__head h2,.discover__copy h2,.personalise h2,
+.festive-edit .section-heading h2,#pooja .feature__heading h2{
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:500;
+}
+.eyebrow,.hero-title-brand,.festive-edit .festive-card__copy small,
+.festive-edit .festive-card__copy strong,#pooja .feature__heading>p:last-child{
+  font-family:'Albert Sans',Arial,sans-serif;
+}
+.site-header{background:rgba(255,255,255,.96)}
+.announcement{background:#832729;color:#FFFFFF}
+.festive-edit{background:linear-gradient(180deg,#FFFFFF 0%,#F6DBDF 100%)}
+#pooja.feature{background:linear-gradient(120deg,#D14A61 0%,#D14A61 55%,#832729 100%)}
+#pooja .feature-board{background:linear-gradient(135deg,#D14A61,#832729)}
+#pooja .feature-products>a{background:#FFFFFF}
+.discover{background:linear-gradient(135deg,#D14A61 0%,#D14A61 45%,#832729 100%)}
+.gold-edit{background:linear-gradient(120deg,#832729 0%,#D14A61 68%,#832729 100%)}
+.personalise{background:linear-gradient(120deg,#832729 0%,#D14A61 58%,#832729 100%)}
+.closing-cta{background:radial-gradient(circle at 70% 22%,#D14A61,#832729 58%,#6E0D1D)}
+.footer-lights{background:radial-gradient(ellipse at center,#ffe89b 0 2px,#c78d31 3px 4px,transparent 5px) 0 0/30px 10px,linear-gradient(90deg,#D14A61,#832729)}
+.festive-edit .festive-card__copy em{
+  background:#D14A61;
+  color:#FFFFFF;
+  box-shadow:0 8px 18px rgba(209,74,97,.22);
+}
+.hero-light-wash{
+  background:
+    linear-gradient(rgba(255,255,255,.15),rgba(246,219,223,.20)),
+    radial-gradient(circle at 50% 22%,rgba(255,255,255,.20),transparent 42%),
+    linear-gradient(112deg,rgba(209,74,97,.12),rgba(255,255,255,.08) 54%,rgba(209,74,97,.10));
+}
+
+/* Compact the Festive Edit vertically on desktop. */
+@media(min-width:821px){
+  .festive-edit{padding-block:28px 34px}
+  .festive-edit .section-heading{margin-bottom:18px}
+  .festive-edit .section-heading>p:last-child{margin-top:7px}
+  .festive-edit .festive-stage{padding:12px;gap:12px}
+  .festive-edit .festive-card__image{aspect-ratio:1.22/1}
+  .festive-edit .festive-card__copy{padding:12px 14px 14px}
+  .festive-edit .festive-card__copy em{min-height:38px;margin-top:9px}
+}
+
+/* Match the compact desktop height of the Festive Edit in Pooja Essentials. */
+@media(min-width:901px){
+  #pooja.feature{padding-block:28px 34px}
+  #pooja .feature__heading{margin-bottom:16px}
+  #pooja .feature__heading .eyebrow{margin-bottom:7px}
+  #pooja .feature__heading>p:last-child{margin-top:7px}
+  #pooja .feature-board{padding:8px;gap:8px}
+  #pooja .feature-hero{min-height:350px}
+  #pooja .feature-hero>span{left:24px;bottom:20px}
+  #pooja .feature-products{gap:8px}
+  #pooja .feature-products img{height:96px;aspect-ratio:auto}
+  #pooja .feature-products span{padding:7px 10px 9px}
+  #pooja .feature-products small{font-size:9px}
+  #pooja .feature-products strong{font-size:15px}
+  #pooja .feature-products b{margin-top:4px;font-size:11px}
+}
+
+/* Staggered sparkle layers for the Pooja Essentials gold-dot backdrop. */
+#pooja.feature::before{animation:poojaDotPulse 3.2s ease-in-out infinite alternate}
+#pooja .feature__glow{display:block;pointer-events:none}
+#pooja .feature__glow::before,#pooja .feature__glow::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    radial-gradient(circle,rgba(255,250,202,1) 0 1.4px,rgba(255,218,102,.55) 1.8px 3px,transparent 6px),
+    radial-gradient(circle,rgba(255,239,155,.95) 0 1px,rgba(255,208,80,.34) 1.5px 2.6px,transparent 5px);
+  background-position:18px 12px,64px 48px;
+  background-size:94px 94px,126px 126px;
+  opacity:.32;
+  animation:poojaSparkleField 2.8s ease-in-out infinite;
+}
+#pooja .feature__glow::after{
+  background-position:52px 30px,10px 78px;
+  background-size:138px 138px,172px 172px;
+  opacity:.18;
+  animation-delay:-1.4s;
+}
+@keyframes poojaDotPulse{
+  0%,100%{opacity:.58;filter:brightness(.92)}
+  48%{opacity:.94;filter:brightness(1.3)}
+}
+@keyframes poojaSparkleField{
+  0%,100%{opacity:.14;filter:brightness(.85);transform:scale(1)}
+  45%{opacity:.68;filter:brightness(1.55);transform:scale(1.006)}
+  70%{opacity:.28;filter:brightness(1.08);transform:scale(1.002)}
+}
+
+/* Carry the same golden twinkle language through the remaining celebration sections. */
+.discover__pattern{animation:poojaDotPulse 3.4s ease-in-out -1s infinite alternate}
+.personalise::after{animation:poojaDotPulse 3s ease-in-out -.6s infinite alternate}
+.discover__pattern::before,.discover__pattern::after,
+.personalise::before,
+.closing-lights::before,.closing-lights::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background-image:
+    radial-gradient(circle,rgba(255,250,202,1) 0 1.4px,rgba(255,218,102,.55) 1.8px 3px,transparent 6px),
+    radial-gradient(circle,rgba(255,239,155,.95) 0 1px,rgba(255,208,80,.34) 1.5px 2.6px,transparent 5px);
+  background-position:18px 12px,64px 48px;
+  background-size:94px 94px,126px 126px;
+  opacity:.28;
+  animation:poojaSparkleField 2.8s ease-in-out infinite;
+}
+.discover__pattern::after{
+  background-position:55px 34px,12px 82px;
+  background-size:142px 142px,178px 178px;
+  animation-delay:-1.45s;
+}
+.personalise::before{z-index:0;animation-delay:-.85s}
+.closing-lights::before{animation-delay:-.35s}
+.closing-lights::after{
+  background-position:48px 28px,8px 74px;
+  background-size:136px 136px,170px 170px;
+  animation-delay:-1.75s;
 }
